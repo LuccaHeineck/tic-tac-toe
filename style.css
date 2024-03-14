@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Nunito:ital,wght@0,900;1,900&display=swap');
+
+body
+{
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 80px;
+    background-color: #423e3b;
+}
+
+.X
+{
+    color: #ff2e00;
+}
+
+.O
+{
+    color: #008080;
+}
+
+#tabuleiro 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 10px;
+}
+
+h1
+{
+    font-size: 40px;
+    color: #fcf9ed;
+}
+
+.quadrado
+{
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    background-color: #fcf9ed;
+    border-radius: 4px;
+    transition: all .2s ease-in-out; 
+}
+
+.quadrado:hover 
+{ 
+    transform: scale(1.05); 
+}
+
+.botao
+{
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 1.5em 3em;
+    color: #fcf9ed;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #008080;
+    transition: all .2s ease-in-out; 
+}
+
+.botao:hover
+{
+    transform: scale(1.11); 
+}
